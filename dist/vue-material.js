@@ -3319,9 +3319,9 @@ exports.default = {
       var target = item.toLowerCase();
       var search = '';
       if (typeof this.searchTerm === 'string') {
-        search = searchTerm;
+        search = this.searchTerm;
       } else if (_typeof(this.searchTerm) === 'object') {
-        search = searchTerm.target;
+        search = this.searchTerm.target;
       }
       search = search.toLowerCase();
 
