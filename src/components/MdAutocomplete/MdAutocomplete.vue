@@ -159,9 +159,9 @@
         const target = item.toLowerCase()
         let search = ''
         if (typeof this.searchTerm === 'string') {
-          search = searchTerm
+          search = this.searchTerm
         } else if (typeof this.searchTerm === 'object') {
-          search = searchTerm.target
+          search = this.searchTerm.target
         }
         search = search.toLowerCase()
 
